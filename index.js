@@ -1,6 +1,6 @@
 const str1 = "hello world this is a long sentence we will use to test the method"
 const str2 = "hello world"
-const str3 = "This is another Long String To Use WHile we are PLaying With Some methods"
+const str3 = "This is another Long String To Use Z WHile we are PLaying With Some methods"
 const str4 = "hello hello world this is a test string hello is a test test string is"
 
 // 1)  .length => you can use the .length method to get the length of a given string
@@ -62,3 +62,9 @@ console.log(str3.slice(5,23))// is another Long St
 console.log(str1.replace(/hello/g,"cheese cake"))//  should replace every instance of hello with cheese cake
 console.log(str1.replace(/l/g,"$$$$$"))// should replace every l with $$$$$
 console.log(str3.replace(/[A-Z]/g,"*"))// should replace every capital letter with *
+
+// 11) .indexOf => returns the index of a given character in a string
+
+console.log(str1.indexOf("this"))//  should return 12
+console.log(str1.indexOf("l"))//  should return 2
+console.log(str3.indexOf("Use"))// should return 31
