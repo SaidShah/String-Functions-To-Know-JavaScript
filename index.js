@@ -1,6 +1,7 @@
-const str1 = "hello world this is a long sentence we will use to test the methods"
+const str1 = "hello world this is a long sentence we will use to test the method"
 const str2 = "hello world"
 const str3 = "This is another Long String To Use WHile we are PLaying With Some methods"
+const str4 = "hello hello world this is a test string hello is a test test string is"
 
 // 1)  .length => you can use the .length method to get the length of a given string
 
@@ -31,3 +32,33 @@ console.log(str3.includes("Use"))// should return true
 console.log(str1.split("")) // splits to each letter
 console.log(str2.split("o"))// splits string at the o's, does not include the o's
 console.log(str3.split(" "))// splits the string at the empty spaces
+
+// 6) .repeat => repeats a string a given number of times, takes in a integer
+
+console.log(str2.repeat(2)) // splits to each letter
+console.log(str2.repeat(6))// splits string at the o's, does not include the o's
+console.log(str2.repeat(11))// splits the string at the empty spaces
+
+// 7) .charAt => return the character at a given index
+
+console.log(str1.charAt(13)) // should return h
+console.log(str2.charAt(4))// should return o
+console.log(str3.charAt(54))// should return g
+
+// 8) .match => returns an array of matching strings, because we are using a global regex
+
+console.log(str4.match(/hello/g))
+console.log(str3.match(/[A-Z]/g))
+console.log(str4.match(/is/g))
+
+// 9) .slice => returns every string after the index provided until the end or next index provided, accepts 1 or 2 integers
+
+console.log(str1.slice(56))//  the method
+console.log(str2.slice(-5))// world
+console.log(str3.slice(5,23))// is another Long St
+
+// 10) .replace => returns every string after the index provided until the end or next index provided, accepts 1 or 2 integers
+
+console.log(str1.replace(/hello/g,"cheese cake"))//  should replace every instance of hello with cheese cake
+console.log(str1.replace(/l/g,"$$$$$"))// should replace every l with $$$$$
+console.log(str3.replace(/[A-Z]/g,"*"))// should replace every capital letter with *
